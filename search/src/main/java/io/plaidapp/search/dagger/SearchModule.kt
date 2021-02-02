@@ -32,7 +32,6 @@ import io.plaidapp.core.interfaces.SearchDataSourceFactoryProvider
 import io.plaidapp.search.ui.SearchActivity
 import io.plaidapp.search.ui.SearchViewModel
 import io.plaidapp.search.ui.SearchViewModelFactory
-import kotlin.reflect.full.createInstance
 
 @Module
 abstract class SearchModule {
@@ -83,7 +82,7 @@ abstract class SearchModule {
         ): SearchDataSourceFactory? {
             return try {
                 val provider =
-                    Class.forName(className).kotlin.createInstance() as SearchDataSourceFactoryProvider
+                    Class.forName(className).kotlin as SearchDataSourceFactoryProvider
                 provider.getFactory(context)
             } catch (e: ClassNotFoundException) {
                 null
