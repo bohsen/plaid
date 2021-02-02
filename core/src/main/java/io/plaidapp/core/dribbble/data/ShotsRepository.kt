@@ -45,7 +45,7 @@ class ShotsRepository constructor(private val remoteDataSource: SearchRemoteData
     }
 
     private fun cache(shots: List<Shot>) {
-        shots.associateTo(shotCache) { it.id to it }
+        shots.associateByTo(shotCache) { it.id }
     }
 
     companion object {
