@@ -50,6 +50,5 @@ dependencies {
     implementation project(':core')
 
     implementation "com.github.bumptech.glide:recyclerview-integration:${versions.glide}"
-    implementation "org.jetbrains.kotlin:kotlin-reflect:${versions.kotlin}"
     kapt "com.google.dagger:dagger-compiler:${versions.dagger}"
 }

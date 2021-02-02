@@ -4,12 +4,9 @@ repositories {
         content {
             includeGroupByRegex "com\\.android.*"
             includeGroupByRegex "androidx.*"
+            includeGroupByRegex "com\\.google.*"
             includeGroup "android.arch.lifecycle"
             includeGroup "android.arch.core"
-            includeGroup "com.google.firebase"
-            includeGroup "com.google.android.gms"
-            includeGroup "com.google.android.material"
-            includeGroup "com.google.gms"
             includeGroup "zipflinger"
         }
     }
@@ -26,6 +23,7 @@ repositories {
             includeGroupByRegex "org\\.codehaus.*"
             includeGroupByRegex "org\\.apache.*"
             includeGroupByRegex "net\\.sf.*"
+            includeGroupByRegex "jakarta.*"
             includeGroupByRegex "javax.*"
             includeGroup "com.github.bumptech.glide"
             includeGroup "com.ibm.icu"
