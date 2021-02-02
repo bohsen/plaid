@@ -32,8 +32,8 @@ android {
         manifestPlaceholders = [filesAuthority: filesAuthorityValue]
     }
 
-    dataBinding {
-        enabled true
+    buildFeatures {
+        dataBinding = true
     }
 
     compileOptions {
